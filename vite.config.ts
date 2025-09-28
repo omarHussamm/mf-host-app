@@ -13,7 +13,7 @@ export default defineConfig({
         'orders-app': 'http://localhost:5002/assets/remoteEntry.js',
         'users-app': 'http://localhost:5003/assets/remoteEntry.js',
       },
-      shared: ['react', 'react-dom']
+      shared: ['react', 'react-dom', 'react-router-dom']
     })
   ],
   resolve: {
