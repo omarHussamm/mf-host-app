@@ -1,5 +1,5 @@
-import { Suspense, lazy } from 'react'
-import { Loading } from '../components/Loading'
+import { lazy } from 'react'
+import { ConditionalRemote } from '../components/ConditionalRemote'
 import { useAuth } from '../contexts/AuthContext'
 
 // Direct import from users remote
@@ -10,8 +10,8 @@ export const UsersPage = () => {
   const { user } = useAuth()
 
   return (
-    <Suspense fallback={<Loading appName="Users App" />}>
+    <ConditionalRemote appName="Users App">
       <UsersApp basePath="/users" user={user} />
-    </Suspense>
+    </ConditionalRemote>
   )
 }

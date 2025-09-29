@@ -66,7 +66,7 @@ export const Header = () => {
           color: '#007bff',
           margin: 0
         }}>
-          🏠 MicroFrontend Host - Phase 4
+                 🏠 MicroFrontend Host - Phase 5
         </h1>
         
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
@@ -136,19 +136,32 @@ export const Header = () => {
                   minWidth: '200px',
                   zIndex: 1000
                 }}>
-                  <Link
-                    to="/profile"
-                    style={{
-                      display: 'block',
-                      padding: '12px 16px',
-                      textDecoration: 'none',
-                      color: '#333',
-                      borderBottom: '1px solid #eee'
-                    }}
-                    onClick={() => setShowUserMenu(false)}
-                  >
-                    👤 Profile
-                  </Link>
+                         <Link
+                           to="/profile"
+                           style={{
+                             display: 'block',
+                             padding: '12px 16px',
+                             textDecoration: 'none',
+                             color: '#333',
+                             borderBottom: '1px solid #eee'
+                           }}
+                           onClick={() => setShowUserMenu(false)}
+                         >
+                           👤 Profile
+                         </Link>
+                         <Link
+                           to="/licenses"
+                           style={{
+                             display: 'block',
+                             padding: '12px 16px',
+                             textDecoration: 'none',
+                             color: '#333',
+                             borderBottom: '1px solid #eee'
+                           }}
+                           onClick={() => setShowUserMenu(false)}
+                         >
+                           📋 Manage Licenses
+                         </Link>
                   <button
                     onClick={() => {
                       logout()
